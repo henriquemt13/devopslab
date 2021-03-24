@@ -20,6 +20,6 @@ deploy:
   app: devopslab-henrique
   on:
       branch: main
- root:
+root:
   os: linux
   dist: xenial
