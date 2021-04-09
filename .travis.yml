@@ -7,7 +7,7 @@ python:
 
 # Instalação de Módulos que são necessários para a Aplicação.                                                                                                                                            
 install:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-  - pip install flask flask-wtf
+  - pip install flask flask-wtf coverage
     # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 addons:
   sonarcloud:
