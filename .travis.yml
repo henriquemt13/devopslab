@@ -40,3 +40,8 @@ jobs:
         app: devopslab-henrique
         on:
           branch: main
+# Slack          
+notifications:
+  slack: devopslabgrupo:FEfXspETWtGadcvAeaI8hBac
+  on_success: always
+  on_failure: always
