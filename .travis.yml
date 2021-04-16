@@ -41,7 +41,7 @@ jobs:
         on:
           branch: main
 # Slack          
-notifications:
-  slack: devopslabgrupo:FEfXspETWtGadcvAeaI8hBac
-  on_success: always
-  on_failure: always
+#notifications:
+# slack: TOKEN
+# on_success: always
+# on_failure: always
