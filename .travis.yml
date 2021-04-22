@@ -41,8 +41,7 @@ jobs:
         on:
           branch: main
 
-     - stage: Staging
-
+    - stage: Staging
       name: "Staging"
       # Instalação de Módulos que são necessários para a Aplicação.
       install:
