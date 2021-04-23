@@ -30,7 +30,8 @@ jobs:
           token: ${SONAR_TOKEN}
 
     - stage: Deploy
-      script: skip
+      script: 
+        - curl https://devopslab-henrique.herokuapp.com/ | grep Pipeline || travis_terminate 1;
       # Definir o Deploy no Heroku
       deploy:
         provider: heroku
@@ -42,7 +43,8 @@ jobs:
           branch: main
           
     - stage: STG Deploy
-      script: skip
+      script: 
+        - curl https://devopslab-henrique-stg.herokuapp.com/ | grep Pipeline || travis_terminate 1;
       # Definir o Deploy no Heroku
       deploy:
         provider: heroku
@@ -52,6 +54,8 @@ jobs:
         app: devopslab-henrique-stg
         on:
           branch: main
+        
+        
 # Slack          
 #notifications:
 # slack: TOKEN
